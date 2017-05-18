@@ -1,0 +1,63 @@
+1. JDK 다운받아 설치한다. (http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)
+
+2. Apache Ant 다운받아 설치한다. (http://ant.apache.org/bindownload.cgi)
+
+3. Android Studio 다운받아 설치한다.  (https://developer.android.com/studio/index.html)
+
+4. Android Studio-SDK 설치한다. 
+    
+    4-1. Android Studio실행 후 상단메뉴 에서 SDK-Manage를 실행
+    4-2. 개발환경에 맞는 옵션 선택 
+        SDK Platforms
+            >Android 7.1.1(Nougat)
+                - Android SDK Platform 25
+                - Sources for Android 25
+                - Google APIs ARM EAVI v7a System Image
+                - Google APIs Intel x86 Atom System Image
+                
+        SDK Tools
+            > Android SDK Build-Tools
+            > Android Emulator
+            > Android SDK Platform-tools
+            > Android SDK Tools
+            
+            > Goole USB Driver
+            > Intel x86 Emulator Accelerator(HAXM installer)
+            > Support Repository
+                - Android Support Repository
+                - Google Repository
+                
+    4-3. 환경변수 설정에서 찾기 쉽도록 설치 경로를 지정한다. 
+    4-4. hybridApp 폴더안에 android-sdk폴더를 만들어 경로를 지정 후 SDK 설치완료
+
+5. 환경변수 설정하기 
+    
+    5-1. 컴퓨터 > 속성 > 고급 시스템 속성 > 고급탭 > 환경변수 
+    
+    5-2. 환경변수 창에 "새로만들기" 버튼 클릭 후 변수이름과 변수값 설정
+    
+    5-3. 환경변수 이름과 변수값 설정하기 
+    
+            시스템 변수명         변수값
+        새로 만들기    JAVA_HOME          C:\program file\java\jdk1.xxx_xx
+        새로 만들기    ANDROID_HOME       c:\hybridApp\android-sdk
+        편집         Path                %JAVA_HOME%bin;
+                                        %ANDROID_HOME%\tools;
+                                        %ANDROID_HOME%\platform-tools;
+                                        %ANDROID_HOME%\build-tools;
+                                        c:\hybridApp\apache-ant-1.xx.x\b;
+    
+6. node.js 다운받아 설치한다. (https://nodejs.org/ko/)
+
+7.시작 > 모든 프로그램 > Node.js (> Node.js command prompt 실행)
+
+8. phonegap 설치하기 (>npm install -g phonegap)
+
+9. 코르도바 설치하기 (>npm install -g cordova )
+                                        
+10. cordova 프로젝트 생성하기 
+    10-1. > cd C:\  (디렉토리 (폴더)변경)
+    10-2. > md testProject (폴더 생성)
+    10-3. > cd testProject (폴더 변경)
+    
+        
